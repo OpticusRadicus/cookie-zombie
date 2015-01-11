@@ -11,7 +11,7 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
   }]);
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
+  function($scope, $routeParams, Phone, pagetwo) {
     $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
       $scope.mainImageUrl = phone.images[0];
     });
