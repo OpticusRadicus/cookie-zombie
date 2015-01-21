@@ -8,7 +8,8 @@ var phonecatApp = angular.module('phonecatApp', [
 
   'phonecatControllers',
   'phonecatFilters',
-  'phonecatServices'
+  'phonecatServices',
+  'ngDialog'
 ]);
 
 phonecatApp.config(['$routeProvider',
@@ -35,3 +36,19 @@ phonecatApp.config(['$routeProvider',
         redirectTo: '/homebase'
       });
   }]);
+
+
+   // Example of how to set default values for all dialogs
+    phonecatApp.config(['ngDialogProvider', function (ngDialogProvider) {
+      ngDialogProvider.setDefaults({
+        className: 'ngdialog-theme-default',
+        plain: false,
+        showClose: true,
+        closeByDocument: true,
+        closeByEscape: true,
+        appendTo: false,
+        preCloseCallback: function () {
+          console.log('default pre-close callback');
+        }
+      });
+    }]);
