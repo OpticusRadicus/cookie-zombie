@@ -10,6 +10,8 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
     $scope.orderProp = 'age';
   }]);
 
+
+
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
   function($scope, $routeParams, Phone, pagetwo, homebase) {
     $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
@@ -20,3 +22,10 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     }
   }]);
+
+
+// ngDialog controllers and directives
+
+
+
+
