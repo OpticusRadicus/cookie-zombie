@@ -2,16 +2,17 @@
 <html lang="en" ng-app="phonecatApp">
 <head>
   <meta charset="utf-8">
-  <title>The Buell Seed Project</title>
+  <title>Cookie Zombie</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/dashboard.css">
-   <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/carousel.css">
+  <link rel="stylesheet" href="css/sticky-nav.css">
 
 <!-- ngDialog css below -->
-<link rel="stylesheet" href="css/ngDialog-theme-default.css">
+
 
 
 
@@ -26,25 +27,37 @@
   <script src="js/controllers.js"></script>
   <script src="js/filters.js"></script>
   <script src="js/services.js"></script>
-  <script src="js/bootstrap.min.js"></script> 
-  <script src="js/ngDialog.js"></script> 
+  <script src="js/bootstrap.min.js"></script>
+ <script src="js/jquery-scrolltofixed.js"></script>
+  <script src="js/stickynav.js"></script>
+
+<!-- Floating sticky top Nav script below -->
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+$(document).ready(function() {
+    $('.header').scrollToFixed({
+     
+    });
+    $('#summary').scrollToFixed({
+        marginTop: $('.header').outerHeight() + 10,
+        limit: $('.footer').offset().top - $('#summary').outerHeight() - 10,
+        zIndex: 999,
+        
+    });
+});
+});  
+
+</script>
 
 </head>
 <body>
-<!-- <div class="row">
-    <div class="col-md-2">
 
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
 
-    </div>
-</div> -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
+
+
+
+<nav class="navbar navbar-inverse header">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -61,6 +74,7 @@
             <li><a href="#/pagetwo">Page 2</a></li>
             <li><a href="#/phones">Phones</a></li>
             <li><a href="#/contact">Contact</a></li>
+            <li><a href="#/teststickynav">teststickynav</a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input ng-model="query" class="form-control" placeholder="Search...">
@@ -69,36 +83,11 @@
       </div>
     </nav>
 
-<!-- SideBar content Below -->
-
-<div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
-          <ul class="nav nav-sidebar">
-            <li><a href="">Really</a></li>
-            <li><a href="">Really2</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-          </ul>
-        </div>
-    </div>
-  </div>
-
-
 
 
 
 
   <div class="view-container">
-
-
-
     <div ng-view class="view-frame"></div>
   </div>
 

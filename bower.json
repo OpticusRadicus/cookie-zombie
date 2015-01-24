@@ -1,8 +1,8 @@
 {
-  "name": "angular-phonecat",
-  "description": "A starter project for AngularJS",
+  "name": "Cookiezombie-new-jan",
+  "description": "A newer better Cookie Zombie",
   "version": "0.0.0",
-  "homepage": "https://github.com/angular/angular-phonecat",
+  "homepage": "https://github.com/OpticusRadicus/cookie-zombie",
   "license": "MIT",
   "private": true,
   "dependencies": {

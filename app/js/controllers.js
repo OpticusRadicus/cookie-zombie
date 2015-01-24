@@ -5,7 +5,7 @@
 var phonecatControllers = angular.module('phonecatControllers', []);
 
 phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone, homebase, pagetwo, contact) {
+  function($scope, Phone, homebase, pagetwo, contact, teststickynav) {
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
   }]);
