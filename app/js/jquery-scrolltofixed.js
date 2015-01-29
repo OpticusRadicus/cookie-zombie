@@ -397,7 +397,7 @@
                 if (!el.getBoundingClientRect) return null;
 
                 el.innerHTML = 'x';
-                el.style.cssText = 'position:fixed;top:100px;';
+                el.style.cssText = 'position:fixed;top:500px;';
                 container.appendChild(el);
 
                 var originalHeight = container.style.height,

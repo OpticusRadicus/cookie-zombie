@@ -10,6 +10,22 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
     $scope.orderProp = 'age';
   }]);
 
+// phonecatControllers.controller('Banner', function ($scope){
+//   $scope.post =  {name: 'Gabrial', id: '1' }
+
+//   )};
+
+
+phonecatApp.controller('ListCtrl', function ($scope) {
+  $scope.Banner = {
+    'name': 'Nexus S',
+     'snippet': 'Fast just got faster with Nexus S.',
+     'imageUrl': 'img/valentinesbanner.jpg'
+  };
+});
+
+
+
 
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
