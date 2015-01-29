@@ -5,9 +5,18 @@
 var phonecatControllers = angular.module('phonecatControllers', []);
 
 phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone, homebase, pagetwo, contact, teststickynav) {
+  function($scope, Phone, homebase, pagetwo, contact) {
     $scope.phones = Phone.query();
     $scope.orderProp = 'age';
+  }]);
+
+
+
+
+phonecatControllers.controller('CookieListCtrl', ['$scope', 'Cookies',
+  function($scope, Cookies) {
+    $scope.cookies = Cookies.query();
+    $scope.orderProp = 'name';
   }]);
 
 // phonecatControllers.controller('Banner', function ($scope){
@@ -23,10 +32,6 @@ phonecatApp.controller('ListCtrl', function ($scope) {
      'imageUrl': 'img/valentinesbanner.jpg'
   };
 });
-
-
-
-
 
 phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
   function($scope, $routeParams, Phone, pagetwo, homebase) {

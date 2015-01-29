@@ -25,14 +25,15 @@ phonecatApp.config(['$routeProvider',
         when('/pagetwo', {
         templateUrl: 'partials/pagetwo.html'
       }).
-          when('/homebase', {
+          when('/homebase', { 
         templateUrl: 'partials/homebase.html'
       }).
           when('/contact', {
         templateUrl: 'partials/contact.html'
       }).  
-          when('/teststickynav', {
-        templateUrl: 'partials/teststickynav.html'
+          when('/cookieList', {
+        templateUrl: 'partials/cookieList.html'
+        // controller: 'CookieListCtrl'
       }). 
       otherwise({
         redirectTo: '/homebase'
