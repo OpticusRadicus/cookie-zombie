@@ -10,3 +10,11 @@ phonecatServices.factory('Phone', ['$resource',
       query: {method:'GET', params:{phoneId:'phones'}, isArray:true}
     });
   }]);
+
+
+// phonecatServices.factory('Post', ['$resource',
+//   function($resource){
+//     return $resource('posts/:cookiesId.json', {}, {
+//       query: {method:'GET', params:{cookiesId:'cookies'}, isArray:true}
+//     });
+//   }]);

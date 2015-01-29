@@ -9,6 +9,14 @@
   z-index: 0;
 }
 
+.imgSmall {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top:-60px;
+  padding: 0;
+}
+
 /*
  * Global add-ons
  */

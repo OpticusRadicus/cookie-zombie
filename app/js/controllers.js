@@ -13,11 +13,91 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
 
 
 
-phonecatControllers.controller('CookieListCtrl', ['$scope', 'Cookies',
-  function($scope, Cookies) {
-    $scope.cookies = Cookies.query();
-    $scope.orderProp = 'name';
-  }]);
+// phonecatApp.controller('CookieListCtrl', ['$scope', 'Cookies',
+//   function($scope, Cookies) {
+//     $scope.cookies = Cookies.query();
+//     $scope.orderProp = 'name';
+//   }]);
+
+
+// phonecatApp.controller('CookieListCtrl', function ($scope, $http) {
+//   $http.get('posts/posts.json').success(function(data) {
+//     $scope.posts = data;
+//   });
+
+//   $scope.orderProp = 'age';
+// });
+
+
+
+phonecatApp.controller('CookieListCtrl', function ($scope, $http){
+    $scope.posts = [
+    {
+        
+        "id": "chocChip", 
+        "imageUrl": "img/cookies/chocChip.jpg", 
+        "name": "chocChip", 
+        "snippet": "A delicous Chocolate chip cookie"
+    }, 
+    {
+    
+        "id": "orio", 
+        "imageUrl": "img/cookies/orio.jpg", 
+        "name": "orio", 
+        "snippet": "A delicous Orio cookie"
+    },
+      {
+        "age": 1, 
+        "id": "motorola-xoom", 
+        "imageUrl": "img/phones/motorola-xoom.0.jpg", 
+        "name": "MOTOROLA XOOM\u2122", 
+        "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
+    }, 
+]
+  });
+
+
+// phonecatApp.controllenr('CookieListCtrl', function ($scope, $http){
+//     $scope.posts = function () {
+//       $http.get('posts/posts.json').success(function(data) {
+//    $scope.posts = data;
+//    });  
+//     }
+//       });
+
+
+    
+
+
+
+
+
+
+
+// $scope.posts = [
+//     {
+        
+//         "id": "chocChip", 
+//         "imageUrl": "img/cookies/chocChip.jpg", 
+//         "name": "chocChip", 
+//         "snippet": "A delicous Chocolate chip cookie"
+//     }, 
+//     {
+    
+//         "id": "orio", 
+//         "imageUrl": "img/cookies/orio.jpg", 
+//         "name": "orio", 
+//         "snippet": "A delicous Orio cookie"
+//     },
+//       {
+//         "age": 1, 
+//         "id": "motorola-xoom", 
+//         "imageUrl": "img/phones/motorola-xoom.0.jpg", 
+//         "name": "MOTOROLA XOOM\u2122", 
+//         "snippet": "The Next, Next Generation\n\nExperience the future with MOTOROLA XOOM, the world's first tablet powered by Android 3.0 (Honeycomb)."
+//     }, 
+// ]
+// });
 
 // phonecatControllers.controller('Banner', function ($scope){
 //   $scope.post =  {name: 'Gabrial', id: '1' }
@@ -27,8 +107,8 @@ phonecatControllers.controller('CookieListCtrl', ['$scope', 'Cookies',
 
 phonecatApp.controller('ListCtrl', function ($scope) {
   $scope.Banner = {
-    'name': 'Nexus S',
-     'snippet': 'Fast just got faster with Nexus S.',
+    'name': 'Valentines',
+     'snippet': '...And love for everyone',
      'imageUrl': 'img/valentinesbanner.jpg'
   };
 });
@@ -43,10 +123,6 @@ phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Ph
       $scope.mainImageUrl = imageUrl;
     }
   }]);
-
-
-// ngDialog controllers and directives
-
 
 
 

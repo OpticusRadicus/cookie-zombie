@@ -31,7 +31,7 @@ phonecatApp.config(['$routeProvider',
           when('/contact', {
         templateUrl: 'partials/contact.html'
       }).  
-          when('/cookieList', {
+      when('/cookieList', {
         templateUrl: 'partials/cookieList.html'
         // controller: 'CookieListCtrl'
       }). 
