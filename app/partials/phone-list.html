@@ -8,9 +8,9 @@
        <div class="col-md-12 col-lg-10">
 
 
-      <ul class="evenMargin list-group">
+      <ul class="evenMargin list-group center-block">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
-            class="thumbnailBuell">
+            class="thumbnailBuell center">
             <a href="#/phones"><h4 class="text-center">{{phone.name}}</h4></a>
           <a href="#/phones" class="thumb"><img class="displayed" ng-src="{{phone.imageUrl}}"></a>
           <p class="pUnderImg text-center">{{phone.snippet}}</p>

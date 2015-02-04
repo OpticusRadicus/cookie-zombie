@@ -9,7 +9,7 @@
     {
         "age": 2,
         "id": "Darth Reese's", 
-        "imageUrl": "img/cookies/orio.jpg", 
+        "imageUrl": "img/cookies/chocChip.jpg", 
         "name": "Darth Reese's", 
         "snippet": "Uber chocolatey dough + Reese's Pieces. Welcome to the Darkside!"
     },
@@ -23,14 +23,14 @@
         {
         "age": 4, 
         "id": "Funfetti", 
-        "imageUrl": "img/cookies/orio.jpg", 
+        "imageUrl": "img/cookies/chocChip.jpg", 
         "name": "Funfetti", 
         "snippet": "A CZ favorite! Bringing back childhood goodness with fruity pebbles & sweet, subtle flavors."
     },
          {
         "age": 5, 
         "id": "Chocolate Chip", 
-        "imageUrl": "img/cookies/orio.jpg", 
+        "imageUrl": "img/cookies/chocChip.jpg", 
         "name": "Chocolate Chip", 
         "snippet": "Our locally world famous chocolate chip and bestseller!! So perfect in so many ways."
     }
