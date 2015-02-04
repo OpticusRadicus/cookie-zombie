@@ -1,0 +1,28 @@
+<div ng-controller='CookieListCtrl' class="container-fluid">
+
+  <pre>{{posts | json}}</pre>  
+<div class="row">
+    <div class="col-md-10">
+      <!--Body content-->
+       <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+<h2>Today's Menu</h2>
+      <ul class="phones">
+        <li ng-repeat="post in posts"
+            class="thumbnail phone-listing">
+   
+        </li>
+       
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+     <!-- <strong>@ {{ post.name }}</strong>
+        <h4>{{ post.snippet }}</h4>
+        <img class="imgSmall pull-right" ng-src="{{ post.imageUrl}}" alt=""> -->
+
+<!-- 
+    <a href="#/cookies/{{cookie.id}}" class="thumb"><img ng-src="{{cookies.imageUrl}}"></a>
+          <a href="#/cookies/{{cookie.id}}">{{cookie.name}}</a>
+          <p>{{cookie.snippet}}</p> -->

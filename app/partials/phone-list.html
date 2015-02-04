@@ -1,0 +1,22 @@
+<div class="container-fluid">
+<div class="row">
+    <div class="col-lg-12">
+
+      <!-- <pre>{{phones | json}}</pre> -->
+      <!--Body content-->
+      <h2 class="text-center">Today's Menu</h2>
+       <div class="col-md-12 col-lg-10">
+
+
+      <ul class="evenMargin list-group">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
+            class="thumbnailBuell">
+            <a href="#/phones"><h4 class="text-center">{{phone.name}}</h4></a>
+          <a href="#/phones" class="thumb"><img class="displayed" ng-src="{{phone.imageUrl}}"></a>
+          <p class="pUnderImg text-center">{{phone.snippet}}</p>
+        </li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -17,9 +17,95 @@
   padding: 0;
 }
 
-/*
- * Global add-ons
- */
+.inline-Buell li {
+  display: inline-block;
+}
+
+.onehundred {
+  width: 100%;
+}
+
+.cookieItem {
+  width: 200px;
+  height: auto;
+}
+
+
+.thumbnailBuell {
+display: inline-table;
+padding: 4px;
+max-width: 200px;
+min-width: 200px;
+min-height: 290px;
+margin-bottom: 20px;
+line-height: 1.42857143;
+background-color: #fff;
+border: 1px solid #ddd;
+border-radius: 4px;
+-webkit-transition: border .2s ease-in-out;
+
+}
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+ul.evenMargin {
+  margin: 1.4em;
+}
+
+
+.thumbnailBuell img { 
+width: 100%;
+
+}
+
+
+img.displayed {
+    display: block;
+    margin-left: 38px;
+    margin-right: auto; }
+
+.pUnderImg {
+  display: inline-block;
+  margin: .5em;
+  padding: 0px;
+  font-size: 1.4em;
+}
 
 .sub-header {
   padding-bottom: 10px;

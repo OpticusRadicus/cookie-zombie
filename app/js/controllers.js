@@ -20,13 +20,13 @@ phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
 //   }]);
 
 
-phonecatApp.controller('CookieListCtrl', function ($scope, $http) {
-  $http.get('posts/posts.json').success(function(data) {
-    $scope.posts = data;
-  });
+// phonecatControllers.controller('CookieListCtrl', function ($scope, $http) {
+//   $http.get('posts/posts.json').success(function(data) {
+//     $scope.post = data;
+//   });
 
-  $scope.orderProp = 'age';
-});
+//   $scope.orderProp = 'age';
+// });
 
 
 
