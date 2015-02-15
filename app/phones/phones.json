@@ -2,35 +2,35 @@
     {
         "age": 1,
         "id": "Apricot Chocolate Chip", 
-        "imageUrl": "img/cookies/chocChip.jpg", 
+        "imageUrl": "img/cookies/chochip.png", 
         "name": "Apricot Chocolate Chip", 
         "snippet": "Another new oatmeal cookie on the menu! Dried apricot & chocolate chips in a hearty oatmeal mix."
     }, 
     {
         "age": 2,
         "id": "Darth Reese's", 
-        "imageUrl": "img/cookies/chocChip.jpg", 
+        "imageUrl": "img/cookies/cookies_cream.png", 
         "name": "Darth Reese's", 
         "snippet": "Uber chocolatey dough + Reese's Pieces. Welcome to the Darkside!"
     },
       {
         "age": 3, 
         "id": "Chocolate + Rainbow Sprinkles", 
-        "imageUrl": "img/cookies/chocChip.jpg", 
+        "imageUrl": "img/cookies/funfety.png", 
         "name": "Chocolate + Rainbow Sprinkles", 
         "snippet": "Rich chocolate cookie with a hint of hazelnut rolled in rainbow sprinkles. A true sweet treat!"
     },
         {
         "age": 4, 
         "id": "Funfetti", 
-        "imageUrl": "img/cookies/chocChip.jpg", 
+        "imageUrl": "img/cookies/oat-choc-apricot.png", 
         "name": "Funfetti", 
         "snippet": "A CZ favorite! Bringing back childhood goodness with fruity pebbles & sweet, subtle flavors."
     },
          {
         "age": 5, 
         "id": "Chocolate Chip", 
-        "imageUrl": "img/cookies/chocChip.jpg", 
+        "imageUrl": "img/cookies/omfg.png", 
         "name": "Chocolate Chip", 
         "snippet": "Our locally world famous chocolate chip and bestseller!! So perfect in so many ways."
     }
